@@ -45,7 +45,7 @@ def main():
     run.log("Accuracy", np.float(accuracy))
     
     os.makedirs('output', exist_ok=True)  
-    joblib.dump(model, 'output')
+    joblib.dump(model, 'output/best-hyperdrive.pkl')
     
     
 if __name__ == '__main__':
