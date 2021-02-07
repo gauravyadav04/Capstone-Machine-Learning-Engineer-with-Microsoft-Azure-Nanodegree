@@ -12,17 +12,16 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core import Dataset
 from azureml.core import Workspace
 
-ws = Workspace(workspace_id = '', authorization_token = '')
+subscription_id = 'f9d5a085-54dc-4215-9ba6-dad5d86e60a0'
+resource_group = 'aml-quickstarts-137804'
+workspace_name = 'quick-starts-ws-137804'
 
-dataset = ws.datasets['heart_failure_clinical_records_dataset.csv']
+workspace = Workspace(subscription_id, resource_group, workspace_name)
 
-#data_url = 'https://raw.githubusercontent.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/main/Capstone%20Project/Dataset/Heart_Failure_Clinical_Records_Dataset.csv'
-#ds = TabularDatasetFactory.from_delimited_files(path=data_url)
-#x, y = clean_data(ds)
-# TODO: Split data into train and test sets.
+dataset = Dataset.get_by_name(workspace, name='Heart_Failure_Clinical_Records_Dataset')
 
 df = dataset.to_pandas_dataframe()
-### YOUR CODE HERE ###a
+
 x = df.drop(columns=['DEATH_EVENT'])
 y = df['DEATH_EVENT']
 
