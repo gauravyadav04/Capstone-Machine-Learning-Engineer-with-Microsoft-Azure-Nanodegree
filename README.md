@@ -2,15 +2,31 @@
 
 # Predict mortality caused by heart failure
 
-*TODO:* Write a short introduction to your project.
+This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) to train a machine learning model using Hyperdrive and AutoML API from AzureML and deploy the best model.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
-## Dataset
+## Dataset - Heart failure clinical dataset
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+The dataset contains 13 features, which report clinical, body, and lifestyle information
+
+| Feature | Description | Measurement |
+| ------ | ------ | ------ |
+| age | Age of the patient| Years |
+| anaemia | Decrease of red blood cells or hemoglobin | Boolean |
+| creatinine phosphokinase | Level of the CPK enzyme in the blood | mcg/L |
+| diabetes | If the patient has diabetes | Boolean |
+| ejection fraction | Percentage of blood the left ventricle pumps out with each contraction | Percentage |
+| high blood pressure | If a patient has hypertension | Boolean |
+| platelets | Platelets in the blood | kiloplatelets/mL |
+| serum creatinine | Level of creatinine in the blood | mcg/dL |
+| serum sodium | Level of sodium in the blood | mEq/L |
+| sex | Gender of patient | Binary |
+| smoking | If the patient smokes | Boolean |
+| time | Follow-up period | Days |
+| (target) death event | If the patient died during the follow-up period | Boollean |
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
