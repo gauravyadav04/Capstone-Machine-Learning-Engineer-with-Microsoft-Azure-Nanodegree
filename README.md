@@ -29,10 +29,12 @@ The dataset contains 13 features, which report clinical, body, and lifestyle inf
 | (target) death event | If the patient died during the follow-up period | Boollean |
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The objective is to train a mchine learning model to predict the target variable - death event - (0 - patient survived and 1 - patient deceased)
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) 
+* uploaded and registered the dataset in Azure ML Studio to access in workspace
+* uploaded to my [github](https://raw.githubusercontent.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/main/data/heart_failure_clinical_records_dataset.csv) to access it in train.py 
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
