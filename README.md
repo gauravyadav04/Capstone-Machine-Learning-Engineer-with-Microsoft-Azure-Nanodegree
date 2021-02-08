@@ -45,7 +45,9 @@ I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+I have used logistic regression to predict the target variable, logistic regression is easier to implement, interpret, and very efficient to train. I have used following parameters -
+* Regularization parameter C, range used [0.01,0.1,1]
+* Maximum number of iterations max_iter, range used [50, 100, 150, 200]
 
 
 ### Results
