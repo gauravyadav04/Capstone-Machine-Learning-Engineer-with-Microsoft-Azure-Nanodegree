@@ -62,7 +62,7 @@ The below screenshot shows the `automl` settings and configuration used for this
 ![0](https://user-images.githubusercontent.com/6285945/107850354-c1416380-6e27-11eb-9f1c-26a4f210a70a.png)
 
 ### Results
-The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with a `Accuracy` of 86.9%
+The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with an `Accuracy` of 86.9%
 
 ![1](https://user-images.githubusercontent.com/6285945/107850357-c3a3bd80-6e27-11eb-89a0-8181dc4eb8e6.png)
 
@@ -119,7 +119,7 @@ Saved and registered the best model -
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
-The best model I got from HyperDrive experiment has accuracy: 78.3% whereas the best model we got from Auto ML experiment has accuracy: 86.9%. So, I deployed the model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
+The best model I got from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. So, I deployed the model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
 
 ![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
 
@@ -132,7 +132,7 @@ The best model I got from HyperDrive experiment has accuracy: 78.3% whereas the 
 ![3](https://user-images.githubusercontent.com/6285945/107850302-6ad42500-6e27-11eb-8e56-b77837e1a6cd.png)
 
 
-The below screenshot shows the REST call made to the service and its success response:
+The below screenshot shows the REST call made to the service and its response:
 
 ![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
 
