@@ -58,6 +58,18 @@ I have used logistic regression to predict the target variable, logistic regress
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+![2](https://user-images.githubusercontent.com/6285945/107850046-8d653e80-6e25-11eb-8bf2-1abf9e3e7e6e.png)
+
+![4](https://user-images.githubusercontent.com/6285945/107850053-91915c00-6e25-11eb-800e-80bfbeba3885.png)
+
+![5](https://user-images.githubusercontent.com/6285945/107850054-948c4c80-6e25-11eb-859f-ee6b53ffe78b.png)
+
+![6](https://user-images.githubusercontent.com/6285945/107850057-97873d00-6e25-11eb-8066-2920dba4f2a3.png)
+
+![3](https://user-images.githubusercontent.com/6285945/107850051-8fc79880-6e25-11eb-96a6-d9d15de4841e.png)
+
+![7](https://user-images.githubusercontent.com/6285945/107850060-9b1ac400-6e25-11eb-9937-5d0edc864dc0.png)
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
@@ -67,30 +79,3 @@ I have used logistic regression to predict the target variable, logistic regress
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
-
-
-pip uninstall azureml-automl-runtime
-pip uninstall azureml-core
-pip uninstall azureml-dataprep
-pip uninstall azureml-dataset-runtime
-pip uninstall azureml-defaults
-pip uninstall azureml-interpret
-pip uninstall azureml-pipeline-core
-pip uninstall azureml-telemetry
-pip uninstall azureml-train-automl-client
-pip uninstall azureml-train-automl-runtime
-pip uninstall azureml-automl-core
-
-
-
-pip install --upgrade azureml-automl-runtime==1.21.0
-pip install --upgrade azureml-core==1.21.0
-pip install --upgrade azureml-dataprep==2.8.2
-pip install --upgrade azureml-dataset-runtime==1.21.0
-pip install --upgrade azureml-defaults==1.21.0
-pip install --upgrade azureml-interpret==1.21.0
-pip install --upgrade azureml-pipeline-core==1.21.0
-pip install --upgrade azureml-telemetry==1.21.0
-pip install --upgrade azureml-train-automl-client==1.21.0
-pip install --upgrade azureml-train-automl-runtime==1.21.0
-pip install --upgrade azureml-automl-core==1.21.0
