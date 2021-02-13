@@ -91,15 +91,20 @@ I have used logistic regression to predict the target variable, logistic regress
 * Maximum number of iterations max_iter, range used [50, 100, 150, 200]
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+The best model has an accuracy of 78.3%. Hyperparameters used are - 
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+['--C', '1', '--max_iter', '150']
+
+
+Following screenshots show the successful run of Hyperdrive experiment
 
 ![0](https://user-images.githubusercontent.com/6285945/107850393-ff3e8780-6e27-11eb-8a73-cc8134050bf9.png)
 
 ![1](https://user-images.githubusercontent.com/6285945/107850394-01084b00-6e28-11eb-91e4-820c842ca0f8.png)
 
 ![2](https://user-images.githubusercontent.com/6285945/107850395-02d20e80-6e28-11eb-9734-c594ec8b4a0d.png)
+
+Belwo are screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ![3](https://user-images.githubusercontent.com/6285945/107850397-05ccff00-6e28-11eb-9a03-04a5e0f3a8d9.png)
 
@@ -109,10 +114,13 @@ I have used logistic regression to predict the target variable, logistic regress
 
 ![7](https://user-images.githubusercontent.com/6285945/107850403-0e253a00-6e28-11eb-927b-72a53a7f7d46.png)
 
+Saved and registered the best model -
+
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+The best model I got from HyperDrive experiment has accuracy: 78.3% whereas the best model we got from Auto ML experiment has accuracy: 86.9%. So, I deployed the model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
 
 ![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
 
@@ -124,14 +132,21 @@ I have used logistic regression to predict the target variable, logistic regress
 
 ![3](https://user-images.githubusercontent.com/6285945/107850302-6ad42500-6e27-11eb-8e56-b77837e1a6cd.png)
 
+
+The below screenshot shows the REST call made to the service and its success response:
+
 ![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
+Please access the screencast using this [link](https://youtu.be/TiGucIh93RM) 
+
+
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+I have converted the best automl model into ONNX format
+
+![ONNX](https://user-images.githubusercontent.com/6285945/107851638-788ea800-6e31-11eb-9361-64369fa6e4df.JPG)
 
