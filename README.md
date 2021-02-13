@@ -2,10 +2,6 @@
 
 This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The objective is to train a machine learning model using Hyperdrive and AutoML and preidct mortality caused by heart failure. Models from these tow experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
 
-In Hyperdrive experiment, I have used Logistics regression algorithm and tuned two parameters -
-* Regularization parameter (C)
-* Maximum number of iterations (max_iter)
-
 
 ## Dataset - Heart failure clinical dataset
 
