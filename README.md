@@ -1,11 +1,16 @@
 # Predict mortality caused by heart failure
 
-This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) to train a machine learning model using Hyperdrive and AutoML API from AzureML and deploy the best model.
+This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The objective is to train a machine learning model using Hyperdrive and AutoML and preidct mortality caused by heart failure. Models from these tow experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
+
+In Hyperdrive experiment, I have used Logistics regression algorithm and tuned two parameters -
+* Regularization parameter (C)
+* Maximum number of iterations (max_iter)
+
 
 ## Dataset - Heart failure clinical dataset
 
 ### Overview
-The dataset contains 13 features, which report clinical, body, and lifestyle information
+The dataset contains detials of 299 patients - 105 women and 194 men - there are 13 features, which report clinical, body, and lifestyle information
 
 | Feature | Description | Measurement |
 | ------ | ------ | ------ |
@@ -89,6 +94,16 @@ Saved and registered the best model -
 I have used logistic regression to predict the target variable, logistic regression is easier to implement, interpret, and very efficient to train. I have used following parameters -
 * Regularization parameter C, range used [0.01,0.1,1]
 * Maximum number of iterations max_iter, range used [50, 100, 150, 200]
+
+I have performed random sampling over the hyperparameter search space using RandomParameterSampling in our parameter sampler, this drastically reduces computation time and we are still able to find reasonably good models when compared to GridParameterSampling methodology where all the possible values from the search space are used, and it supports early termination of low-performance runs
+
+BanditPolicy is used here which is an "aggressive" early stopping policy. It cuts more runs than a conservative policy like the MedianStoppingPolicy, hence saving the computational time significantly. Configuration Parameters:-
+
+* slack_factor/slack_amount : (factor)The slack allowed with respect to the best performing training run.(amount) Specifies the allowable slack as an absolute amount, instead of a ratio. Set to 0.1.
+
+* evaluation_interval : (optional) The frequency for applying the policy. Set to 1.
+
+* delay_evaluation : (optional) Delays the first policy evaluation for a specified number of intervals. Set to 5.
 
 ### Results
 The best model has an accuracy of 78.3%. Hyperparameters used are - 
