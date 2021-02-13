@@ -44,6 +44,25 @@ I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
+![0](https://user-images.githubusercontent.com/6285945/107850354-c1416380-6e27-11eb-9f1c-26a4f210a70a.png)
+
+![1](https://user-images.githubusercontent.com/6285945/107850357-c3a3bd80-6e27-11eb-89a0-8181dc4eb8e6.png)
+
+![2](https://user-images.githubusercontent.com/6285945/107850359-c56d8100-6e27-11eb-9b41-cc669a10c2e9.png)
+
+![3](https://user-images.githubusercontent.com/6285945/107850362-c7374480-6e27-11eb-9b0f-915a55dd1f41.png)
+
+![4](https://user-images.githubusercontent.com/6285945/107850365-c9999e80-6e27-11eb-9ca8-72bd253d45e8.png)
+
+![5](https://user-images.githubusercontent.com/6285945/107850367-cc948f00-6e27-11eb-8ad4-8c088ecc09b2.png)
+
+![6](https://user-images.githubusercontent.com/6285945/107850368-ce5e5280-6e27-11eb-846a-06660d6e341b.png)
+
+![7](https://user-images.githubusercontent.com/6285945/107850372-d0c0ac80-6e27-11eb-83cb-0a51d40d6a4f.png)
+
+![9](https://user-images.githubusercontent.com/6285945/107850373-d28a7000-6e27-11eb-9630-d9d960265c76.png)
+
+
 ## Hyperparameter Tuning
 I have used logistic regression to predict the target variable, logistic regression is easier to implement, interpret, and very efficient to train. I have used following parameters -
 * Regularization parameter C, range used [0.01,0.1,1]
