@@ -1,11 +1,6 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 # Predict mortality caused by heart failure
 
 This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) to train a machine learning model using Hyperdrive and AutoML API from AzureML and deploy the best model.
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset - Heart failure clinical dataset
 
@@ -29,7 +24,7 @@ The dataset contains 13 features, which report clinical, body, and lifestyle inf
 | (target) death event | If the patient died during the follow-up period | Boollean |
 
 ### Task
-The objective is to train a mchine learning model to predict the target variable - death event - (0 - patient survived and 1 - patient deceased)
+The objective is to train and deploy a machine learning model which predicts the target variable - death event - (0 - patient survived and 1 - patient deceased)
 
 ### Access
 I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data) 
@@ -39,16 +34,41 @@ I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
 
-### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+AutoML Settings
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+| Name | Description | Value |
+| ------ | ------ | ------ |
+| experiment_timeout_minutes | Defines as how long experement will run | 30 |
+| max_concurrent_iterations | Represents the maximum number of iterations that would be executed in parallel. The default value is 1 | 4 |
+| n_cross_validations | Number of cross validations to perform | 5 |
+| primary_metric | The metric that Automated Machine Learning will optimize for model selection | "accuracy" |
+
+AutoML Config
+
+| Name | Description | Value |
+| ------ | ------ | ------ |
+| compute_target | The Azure Machine Learning compute target to run the Automated Machine Learning experiment on | "capstone-cluster" |
+| task | Type of task to run | "classification" |
+| training_data | dataset to be trained on | dataset |
+| label_column_name | Coumn to be predicted | "DEATH_EVENT" |
+| path | Folder path | "./automl" |
+| enable_early_stopping | Early termination if the score is not improving in the short term | True |
+| enable_onnx_compatible_models | Enable or disable enforcing the ONNX-compatible models | True |
+| featurization | FeaturizationConfig Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used | "auto" |
+| debug_log | The log file to write debug information to | "automl_errors.log" |
+
+The below screenshot shows the `automl` settings and configuration used for this experiment
 
 ![0](https://user-images.githubusercontent.com/6285945/107850354-c1416380-6e27-11eb-9f1c-26a4f210a70a.png)
+
+### Results
+The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with a `Accuracy` of 86.9%
 
 ![1](https://user-images.githubusercontent.com/6285945/107850357-c3a3bd80-6e27-11eb-89a0-8181dc4eb8e6.png)
 
 ![2](https://user-images.githubusercontent.com/6285945/107850359-c56d8100-6e27-11eb-9b41-cc669a10c2e9.png)
+
+Below are the screenshots of `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ![3](https://user-images.githubusercontent.com/6285945/107850362-c7374480-6e27-11eb-9b0f-915a55dd1f41.png)
 
@@ -59,6 +79,8 @@ I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-
 ![6](https://user-images.githubusercontent.com/6285945/107850368-ce5e5280-6e27-11eb-846a-06660d6e341b.png)
 
 ![7](https://user-images.githubusercontent.com/6285945/107850372-d0c0ac80-6e27-11eb-83cb-0a51d40d6a4f.png)
+
+Saved and registered the best model - 
 
 ![9](https://user-images.githubusercontent.com/6285945/107850373-d28a7000-6e27-11eb-9630-d9d960265c76.png)
 
