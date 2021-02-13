@@ -58,17 +58,17 @@ I have used logistic regression to predict the target variable, logistic regress
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
-![2](https://user-images.githubusercontent.com/6285945/107850046-8d653e80-6e25-11eb-8bf2-1abf9e3e7e6e.png)
+![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
 
-![4](https://user-images.githubusercontent.com/6285945/107850053-91915c00-6e25-11eb-800e-80bfbeba3885.png)
+![4](https://user-images.githubusercontent.com/6285945/107850303-6b6cbb80-6e27-11eb-9e25-a4f6f5b62ec5.png)
 
-![5](https://user-images.githubusercontent.com/6285945/107850054-948c4c80-6e25-11eb-859f-ee6b53ffe78b.png)
+![5](https://user-images.githubusercontent.com/6285945/107850305-6dcf1580-6e27-11eb-9ef8-af689b11be49.png)
 
-![6](https://user-images.githubusercontent.com/6285945/107850057-97873d00-6e25-11eb-8066-2920dba4f2a3.png)
+![6](https://user-images.githubusercontent.com/6285945/107850307-6e67ac00-6e27-11eb-8e50-c27fd65f0cd1.png)
 
-![3](https://user-images.githubusercontent.com/6285945/107850051-8fc79880-6e25-11eb-96a6-d9d15de4841e.png)
+![3](https://user-images.githubusercontent.com/6285945/107850302-6ad42500-6e27-11eb-8e56-b77837e1a6cd.png)
 
-![7](https://user-images.githubusercontent.com/6285945/107850060-9b1ac400-6e25-11eb-9937-5d0edc864dc0.png)
+![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
