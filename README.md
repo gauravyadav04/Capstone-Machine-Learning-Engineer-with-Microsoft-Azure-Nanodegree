@@ -104,7 +104,7 @@ Following screenshots show the successful run of Hyperdrive experiment
 
 ![2](https://user-images.githubusercontent.com/6285945/107850395-02d20e80-6e28-11eb-9734-c594ec8b4a0d.png)
 
-Belwo are screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Below are screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ![3](https://user-images.githubusercontent.com/6285945/107850397-05ccff00-6e28-11eb-9a03-04a5e0f3a8d9.png)
 
@@ -119,7 +119,6 @@ Saved and registered the best model -
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 The best model I got from HyperDrive experiment has accuracy: 78.3% whereas the best model we got from Auto ML experiment has accuracy: 86.9%. So, I deployed the model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
 
 ![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
