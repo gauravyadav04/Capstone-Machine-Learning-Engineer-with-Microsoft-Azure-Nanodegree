@@ -32,7 +32,7 @@ I have downloaded the data from [Kaggle](https://www.kaggle.com/andrewmvd/heart-
 * uploaded to my [github](https://raw.githubusercontent.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/main/data/heart_failure_clinical_records_dataset.csv) to access it in train.py 
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+Overview of the `automl` settings and configuration you used for this experiment
 
 AutoML Settings
 
