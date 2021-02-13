@@ -68,11 +68,26 @@ I have used logistic regression to predict the target variable, logistic regress
 * Regularization parameter C, range used [0.01,0.1,1]
 * Maximum number of iterations max_iter, range used [50, 100, 150, 200]
 
-
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+![0](https://user-images.githubusercontent.com/6285945/107850393-ff3e8780-6e27-11eb-8a73-cc8134050bf9.png)
+
+![1](https://user-images.githubusercontent.com/6285945/107850394-01084b00-6e28-11eb-91e4-820c842ca0f8.png)
+
+![2](https://user-images.githubusercontent.com/6285945/107850395-02d20e80-6e28-11eb-9734-c594ec8b4a0d.png)
+
+![3](https://user-images.githubusercontent.com/6285945/107850397-05ccff00-6e28-11eb-9a03-04a5e0f3a8d9.png)
+
+![4](https://user-images.githubusercontent.com/6285945/107850398-0796c280-6e28-11eb-8a5c-9400c60d14e3.png)
+
+![6](https://user-images.githubusercontent.com/6285945/107850401-0bc2e000-6e28-11eb-96cb-a5391425a33f.png)
+
+![7](https://user-images.githubusercontent.com/6285945/107850403-0e253a00-6e28-11eb-927b-72a53a7f7d46.png)
+
+![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
