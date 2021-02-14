@@ -65,7 +65,7 @@ The below screenshot shows the `automl` settings and configuration used for this
 ![0](https://user-images.githubusercontent.com/6285945/107850354-c1416380-6e27-11eb-9f1c-26a4f210a70a.png)
 
 ### Results
-The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with an `Accuracy` of 86.9%
+The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with an `Accuracy` of 87.3%
 
 ![1](https://user-images.githubusercontent.com/6285945/107850357-c3a3bd80-6e27-11eb-89a0-8181dc4eb8e6.png)
 
@@ -343,7 +343,7 @@ Saved and registered the best model -
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
-The best model from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. I registered the model from Auto ML experiment, then created InferenceConfig by providing the entry script [score.py](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/score.py) and [environment dependencies](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/my-conda-env.yml). After that I deployed model as a web service with ACI (Azure Container Instance) using deploy configuration -
+The best model from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 87.3%. I registered the model from Auto ML experiment, then created InferenceConfig by providing the entry script [score.py](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/score.py) and [environment dependencies](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/my-conda-env.yml). After that I deployed model as a web service with ACI (Azure Container Instance) using deploy configuration -
 
 * cpu_cores = 1,
 * memory_gb = 1,
