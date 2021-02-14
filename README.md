@@ -75,8 +75,6 @@ The following screenshots show the successfully completed AutoML run. The best m
 
 Below are the screenshots of `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
-![3](https://user-images.githubusercontent.com/6285945/107850362-c7374480-6e27-11eb-9b0f-915a55dd1f41.png)
-
 ![4](https://user-images.githubusercontent.com/6285945/107873651-fad2a700-6ed9-11eb-9b10-121e8e1e40f4.png)
 
 ![5](https://user-images.githubusercontent.com/6285945/107873654-fdcd9780-6ed9-11eb-8b0b-545628d6b76c.png)
