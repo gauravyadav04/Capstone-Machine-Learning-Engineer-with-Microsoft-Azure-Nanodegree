@@ -371,7 +371,7 @@ For querying the endpoint, one can initiate REST endpoint call using following s
     
 The below screenshot shows the REST call made with sample input to the service and its response:
 
-![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
+![Screenshot (478)](https://user-images.githubusercontent.com/6285945/107873769-e0e59400-6eda-11eb-99c3-87e218e7ed28.png)
 
 ## Screen Recording
 - A working model
