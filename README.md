@@ -1,6 +1,8 @@
 # Predict mortality caused by heart failure
 
-This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). The objective is to train a machine learning model using Hyperdrive and AutoML and predict mortality caused by heart failure. Models from these tow experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
+This project is part of the Udacity Azure ML Nanodegree. In this project, I have used [heart failure clinical records dataset](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). 
+
+The objective is to train a machine learning model using Hyperdrive and AutoML and predict mortality caused by heart failure. Models from these two experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
 
 
 ## Dataset - Heart failure clinical dataset
@@ -172,4 +174,10 @@ Please access the screencast using this [link](https://youtu.be/TiGucIh93RM)
 I have converted the best automl model into ONNX format
 
 ![ONNX](https://user-images.githubusercontent.com/6285945/107851638-788ea800-6e31-11eb-9361-64369fa6e4df.JPG)
+
+## Further Improvement
+
+* Model performance can be improved by collecting more data
+* Consider other performance metrics such as Precision, Recall and F1 Score 
+* Deploy model to Edge using Azure IoT Edge
 
