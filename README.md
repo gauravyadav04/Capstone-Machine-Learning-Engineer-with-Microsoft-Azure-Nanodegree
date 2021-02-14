@@ -67,21 +67,23 @@ The below screenshot shows the `automl` settings and configuration used for this
 ### Results
 The following screenshots show the successfully completed AutoML run. The best model from this experiment was the VotingEnsemble with an `Accuracy` of 87.3%
 
-![1](https://user-images.githubusercontent.com/6285945/107850357-c3a3bd80-6e27-11eb-89a0-8181dc4eb8e6.png)
+![1](https://user-images.githubusercontent.com/6285945/107873645-f1493f00-6ed9-11eb-8cb4-dbfc3751a1e0.png)
 
-![2](https://user-images.githubusercontent.com/6285945/107850359-c56d8100-6e27-11eb-9b41-cc669a10c2e9.png)
+![2](https://user-images.githubusercontent.com/6285945/107873647-f5755c80-6ed9-11eb-84f7-3dec987b8973.png)
+
+![3](https://user-images.githubusercontent.com/6285945/107873649-f8704d00-6ed9-11eb-98b9-a05b34cd8296.png)
 
 Below are the screenshots of `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ![3](https://user-images.githubusercontent.com/6285945/107850362-c7374480-6e27-11eb-9b0f-915a55dd1f41.png)
 
-![4](https://user-images.githubusercontent.com/6285945/107850365-c9999e80-6e27-11eb-9ca8-72bd253d45e8.png)
+![4](https://user-images.githubusercontent.com/6285945/107873651-fad2a700-6ed9-11eb-9b10-121e8e1e40f4.png)
 
-![5](https://user-images.githubusercontent.com/6285945/107850367-cc948f00-6e27-11eb-8ad4-8c088ecc09b2.png)
+![5](https://user-images.githubusercontent.com/6285945/107873654-fdcd9780-6ed9-11eb-8b0b-545628d6b76c.png)
 
-![6](https://user-images.githubusercontent.com/6285945/107850368-ce5e5280-6e27-11eb-846a-06660d6e341b.png)
+![6](https://user-images.githubusercontent.com/6285945/107873657-00c88800-6eda-11eb-8e6e-25998d7f6dbe.png)
 
-![7](https://user-images.githubusercontent.com/6285945/107850372-d0c0ac80-6e27-11eb-83cb-0a51d40d6a4f.png)
+![7](https://user-images.githubusercontent.com/6285945/107873658-032ae200-6eda-11eb-85b4-d9092fa82706.png)
 
 VotingEnsemble takes a majority vote of various algorithms, this make it extremely robust and helps reduce the bias associated with individual estimators. Following are the estimators and their respective weights used in VotingEnsemble trained in Auto ML experiment
 
