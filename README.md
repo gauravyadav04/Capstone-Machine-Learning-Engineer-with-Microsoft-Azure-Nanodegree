@@ -130,7 +130,14 @@ Saved and registered the best model -
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
-The best model from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. So, I have deployed model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
+The best model from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. I registered the model from Auto ML experiment, then created InferenceConfig by providing the entry script [score.py](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/score.py) and [environment dependencies](https://github.com/gauravyadav04/Capstone-Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/my-conda-env.yml). After that I deployed model as a web service with ACI (Azure Container Instance) using deploy configuration -
+
+* cpu_cores = 1,
+* memory_gb = 1,
+* auth_enabled = True,
+* enable_app_insights = True,
+* tags = {'name':'Heart failure prediction'},
+* description='Heart failure prediction model'
 
 ![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
 
