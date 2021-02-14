@@ -130,7 +130,7 @@ Saved and registered the best model -
 ![8](https://user-images.githubusercontent.com/6285945/107850405-0feefd80-6e28-11eb-8fe3-99e02505911e.png)
 
 ## Model Deployment
-The best model I got from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. So, I deployed the model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
+The best model from Hyperdrive experiment has accuracy: 78.3%, whereas the best model from Auto ML experiment has accuracy: 86.9%. So, I have deployed model from Auto ML experiment. The below screen shows the model has been deployed and in Healthy status:
 
 ![2](https://user-images.githubusercontent.com/6285945/107850301-6a3b8e80-6e27-11eb-9089-2921431ec4cb.png)
 
@@ -143,6 +143,50 @@ The best model I got from Hyperdrive experiment has accuracy: 78.3%, whereas the
 ![3](https://user-images.githubusercontent.com/6285945/107850302-6ad42500-6e27-11eb-8e56-b77837e1a6cd.png)
 
 
+For querying the endpoint, one can initiate REST endpoint call using following steps:
+
+* Store scoring uri and primary key
+* Create header with key "Content-Type" and value "application/json" and set Authorization with Bearer token
+* Create sample input and post the request. Here is a sample input:
+
+`
+
+data= { "data":
+       [
+           
+           {
+               'age': 74,
+               'anaemia': 1,
+               'creatinine_phosphokinase': 1618,
+               'diabetes': 1,
+               'ejection_fraction': 27,
+               'high_blood_pressure': 1,
+               'platelets': 275095,
+               'serum_creatinine': 2.3,
+               'serum_sodium': 133,
+               'sex': 0,
+               'smoking': 0,
+               'time': 9
+           },
+           {
+               'age': 46,
+               'anaemia': 0,
+               'creatinine_phosphokinase': 800,
+               'diabetes': 0,
+               'ejection_fraction': 48,
+               'high_blood_pressure': 1,
+               'platelets': 259000,
+               'serum_creatinine': 1.79,
+               'serum_sodium': 135,
+               'sex': 1,
+               'smoking': 0,
+               'time': 107
+           }
+       ]
+    }
+    
+`
+    
 The below screenshot shows the REST call made to the service and its response:
 
 ![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
