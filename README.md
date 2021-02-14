@@ -149,9 +149,7 @@ For querying the endpoint, one can initiate REST endpoint call using following s
 * Create header with key "Content-Type" and value "application/json" and set Authorization with Bearer token
 * Create sample input and post the request. Here is a sample input:
 
-`
-
-data= { "data":
+`data= { "data":``
        [
            
            {
@@ -184,8 +182,7 @@ data= { "data":
            }
        ]
     }
-    
-`
+ `
     
 The below screenshot shows the REST call made to the service and its response:
 
