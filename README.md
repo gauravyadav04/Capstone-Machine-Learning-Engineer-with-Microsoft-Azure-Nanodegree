@@ -83,6 +83,217 @@ Below are the screenshots of `RunDetails` widget as well as a screenshot of the 
 
 ![7](https://user-images.githubusercontent.com/6285945/107850372-d0c0ac80-6e27-11eb-83cb-0a51d40d6a4f.png)
 
+VotingEnsemble takes a majority vote of various algorithms, this make it extremely robust and helps reduce the bias associated with individual estimators. Following are the estimators and their respective weights used in VotingEnsemble trained in Auto ML experiment
+
+| Estimator | Weight |
+| ------ | ------ |
+| extratreesclassifier with robustscaler | 0.14285714285714285 |
+| extratreesclassifier with maxabsscaler | 0.14285714285714285 |
+| randomforestclassifier with robustscaler | 0.14285714285714285 |
+| xgboostclassifier with sparsenormalizer | 0.14285714285714285 |
+| lightgbmclassifier with sparsenormalizer | 0.14285714285714285 |
+| xgboostclassifier with standardscalerwrapper | 0.2857142857142857 |
+
+Below are the details of all parameters associated with estimators used in VotingEnsemble
+
+```
+datatransformer
+{'enable_dnn': None,
+ 'enable_feature_sweeping': None,
+ 'feature_sweeping_config': None,
+ 'feature_sweeping_timeout': None,
+ 'featurization_config': None,
+ 'force_text_dnn': None,
+ 'is_cross_validation': None,
+ 'is_onnx_compatible': None,
+ 'logger': None,
+ 'observer': None,
+ 'task': None,
+ 'working_dir': None}
+
+prefittedsoftvotingclassifier
+{'estimators': ['14', '30', '28', '11', '34', '32'],
+ 'weights': [0.14285714285714285,
+             0.14285714285714285,
+             0.14285714285714285,
+             0.14285714285714285,
+             0.14285714285714285,
+             0.2857142857142857]}
+
+14 - robustscaler
+{'copy': True,
+ 'quantile_range': [25, 75],
+ 'with_centering': True,
+ 'with_scaling': False}
+
+14 - extratreesclassifier
+{'bootstrap': False,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'entropy',
+ 'max_depth': None,
+ 'max_features': 0.8,
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_impurity_split': None,
+ 'min_samples_leaf': 0.01,
+ 'min_samples_split': 0.2442105263157895,
+ 'min_weight_fraction_leaf': 0.0,
+ 'n_estimators': 100,
+ 'n_jobs': 1,
+ 'oob_score': False,
+ 'random_state': None,
+ 'verbose': 0,
+ 'warm_start': False}
+
+30 - maxabsscaler
+{'copy': True}
+
+30 - extratreesclassifier
+{'bootstrap': False,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'entropy',
+ 'max_depth': None,
+ 'max_features': 0.9,
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_impurity_split': None,
+ 'min_samples_leaf': 0.08736842105263157,
+ 'min_samples_split': 0.19736842105263158,
+ 'min_weight_fraction_leaf': 0.0,
+ 'n_estimators': 25,
+ 'n_jobs': 1,
+ 'oob_score': False,
+ 'random_state': None,
+ 'verbose': 0,
+ 'warm_start': False}
+
+28 - robustscaler
+{'copy': True,
+ 'quantile_range': [10, 90],
+ 'with_centering': True,
+ 'with_scaling': False}
+
+28 - randomforestclassifier
+{'bootstrap': True,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'gini',
+ 'max_depth': None,
+ 'max_features': 0.4,
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_impurity_split': None,
+ 'min_samples_leaf': 0.035789473684210524,
+ 'min_samples_split': 0.10368421052631578,
+ 'min_weight_fraction_leaf': 0.0,
+ 'n_estimators': 25,
+ 'n_jobs': 1,
+ 'oob_score': True,
+ 'random_state': None,
+ 'verbose': 0,
+ 'warm_start': False}
+
+11 - sparsenormalizer
+{'copy': True, 'norm': 'max'}
+
+11 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 1,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 0.9,
+ 'eta': 0.3,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 10,
+ 'max_leaves': 15,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 25,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'reg:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 0,
+ 'reg_lambda': 0.5208333333333334,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 0.6,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+
+34 - sparsenormalizer
+{'copy': True, 'norm': 'l1'}
+
+34 - lightgbmclassifier
+{'boosting_type': 'goss',
+ 'class_weight': None,
+ 'colsample_bytree': 0.4955555555555555,
+ 'importance_type': 'split',
+ 'learning_rate': 0.05263631578947369,
+ 'max_bin': 10,
+ 'max_depth': 10,
+ 'min_child_samples': 9,
+ 'min_child_weight': 2,
+ 'min_split_gain': 1,
+ 'n_estimators': 50,
+ 'n_jobs': 1,
+ 'num_leaves': 110,
+ 'objective': None,
+ 'random_state': None,
+ 'reg_alpha': 0.5789473684210527,
+ 'reg_lambda': 0.10526315789473684,
+ 'silent': True,
+ 'subsample': 1,
+ 'subsample_for_bin': 200000,
+ 'subsample_freq': 0,
+ 'verbose': -10}
+
+32 - standardscalerwrapper
+{'class_name': 'StandardScaler',
+ 'copy': True,
+ 'module_name': 'sklearn.preprocessing._data',
+ 'with_mean': False,
+ 'with_std': False}
+
+32 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 1,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 0.6,
+ 'eta': 0.4,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 6,
+ 'max_leaves': 7,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 10,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'reg:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 0,
+ 'reg_lambda': 0.20833333333333334,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 0.6,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+```
+
 Saved and registered the best model - 
 
 ![9](https://user-images.githubusercontent.com/6285945/107850373-d28a7000-6e27-11eb-9630-d9d960265c76.png)
