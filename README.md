@@ -147,44 +147,9 @@ For querying the endpoint, one can initiate REST endpoint call using following s
 
 * Store scoring uri and primary key
 * Create header with key "Content-Type" and value "application/json" and set Authorization with Bearer token
-* Create sample input and post the request. Here is a sample input:
-
-`data= { "data":``
-       [
-           
-           {
-               'age': 74,
-               'anaemia': 1,
-               'creatinine_phosphokinase': 1618,
-               'diabetes': 1,
-               'ejection_fraction': 27,
-               'high_blood_pressure': 1,
-               'platelets': 275095,
-               'serum_creatinine': 2.3,
-               'serum_sodium': 133,
-               'sex': 0,
-               'smoking': 0,
-               'time': 9
-           },
-           {
-               'age': 46,
-               'anaemia': 0,
-               'creatinine_phosphokinase': 800,
-               'diabetes': 0,
-               'ejection_fraction': 48,
-               'high_blood_pressure': 1,
-               'platelets': 259000,
-               'serum_creatinine': 1.79,
-               'serum_sodium': 135,
-               'sex': 1,
-               'smoking': 0,
-               'time': 107
-           }
-       ]
-    }
- `
+* Create sample input and post the request. 
     
-The below screenshot shows the REST call made to the service and its response:
+The below screenshot shows the REST call made with sample input to the service and its response:
 
 ![7](https://user-images.githubusercontent.com/6285945/107850309-6f98d900-6e27-11eb-962e-a537f3cb05c2.png)
 
